@@ -1,0 +1,23 @@
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\bin\Debug\dewey decimal app.exe.config
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\bin\Debug\dewey decimal app.exe
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\bin\Debug\dewey decimal app.pdb
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app.csproj.AssemblyReference.cache
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\App.g.cs
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app_MarkupCompile.cache
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app_MarkupCompile.lref
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app.g.resources
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey_decimal_app.Properties.Resources.resources
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app.csproj.GenerateResource.cache
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app.csproj.CoreCompileInputs.cache
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app.exe
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\dewey decimal app.pdb
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\testwindow.g.cs
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\testwindow.baml
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\bookidentyfying.g.cs
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\bookidentyfying.baml
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\findingbooknumbers.g.cs
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\findingbooknumbers.baml
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\BookOrdering.g.cs
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\BookOrdering.baml
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\HomePage.g.cs
+C:\Users\rough\source\repos\dewey decimal app\dewey decimal app\obj\Debug\HomePage.baml

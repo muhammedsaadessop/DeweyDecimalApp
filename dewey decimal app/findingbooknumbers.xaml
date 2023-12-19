@@ -1,0 +1,157 @@
+﻿<Window x:Class="dewey_decimal_app.findingbooknumbers"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dewey_decimal_app"
+        mc:Ignorable="d"
+        Title="findingbooknumbers (click from left to right)" Height="650" Width="1200"
+        ResizeMode="CanMinimize">
+    <Window.Resources>
+        <SolidColorBrush x:Key="ProgressBar.Progress" Color="#FF06B025"/>
+        <SolidColorBrush x:Key="ProgressBar.Background" Color="#FFE6E6E6"/>
+        <SolidColorBrush x:Key="ProgressBar.Border" Color="#FFBCBCBC"/>
+        <Style x:Key="ProgressBarStyle1" TargetType="{x:Type ProgressBar}">
+            <Setter Property="Foreground" Value="{StaticResource ProgressBar.Progress}"/>
+            <Setter Property="Background" Value="{StaticResource ProgressBar.Background}"/>
+            <Setter Property="BorderBrush" Value="{StaticResource ProgressBar.Border}"/>
+            <Setter Property="BorderThickness" Value="1"/>
+            <Setter Property="Template">
+                <Setter.Value>
+                    <ControlTemplate TargetType="{x:Type ProgressBar}">
+                        <Grid x:Name="TemplateRoot">
+                            <VisualStateManager.VisualStateGroups>
+                                <VisualStateGroup x:Name="CommonStates">
+                                    <VisualState x:Name="Determinate"/>
+                                    <VisualState x:Name="Indeterminate">
+                                        <Storyboard RepeatBehavior="Forever">
+                                            <DoubleAnimationUsingKeyFrames Storyboard.TargetName="Animation" Storyboard.TargetProperty="(UIElement.RenderTransform).(TransformGroup.Children)[0].(ScaleTransform.ScaleX)">
+                                                <EasingDoubleKeyFrame KeyTime="0" Value="0.25"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:1" Value="0.25"/>
+                                                <EasingDoubleKeyFrame KeyTime="0:0:2" Value="0.25"/>
+                                            </DoubleAnimationUsingKeyFrames>
+                                            <PointAnimationUsingKeyFrames Storyboard.TargetName="Animation" Storyboard.TargetProperty="(UIElement.RenderTransformOrigin)">
+                                                <EasingPointKeyFrame KeyTime="0" Value="-0.5,0.5"/>
+                                                <EasingPointKeyFrame KeyTime="0:0:1" Value="0.5,0.5"/>
+                                                <EasingPointKeyFrame KeyTime="0:0:2" Value="1.5,0.5"/>
+                                            </PointAnimationUsingKeyFrames>
+                                        </Storyboard>
+                                    </VisualState>
+                                </VisualStateGroup>
+                            </VisualStateManager.VisualStateGroups>
+                            <Border Background="{TemplateBinding Background}" BorderBrush="{TemplateBinding BorderBrush}" BorderThickness="{TemplateBinding BorderThickness}"/>
+                            <Rectangle x:Name="PART_Track"/>
+                            <Grid x:Name="PART_Indicator" ClipToBounds="true" HorizontalAlignment="Left">
+                                <Rectangle x:Name="Indicator" Fill="{TemplateBinding Foreground}" RadiusX="30" RadiusY="30" />
+                                <Rectangle x:Name="Animation" Fill="{TemplateBinding Foreground}" RenderTransformOrigin="0.5,0.5" RadiusX="30" RadiusY="30">
+                                    <Rectangle.RenderTransform>
+                                        <TransformGroup>
+                                            <ScaleTransform/>
+                                            <SkewTransform/>
+                                            <RotateTransform/>
+                                            <TranslateTransform/>
+                                        </TransformGroup>
+                                    </Rectangle.RenderTransform>
+                                </Rectangle>
+                            </Grid>
+                        </Grid>
+                        <ControlTemplate.Triggers>
+                            <Trigger Property="Orientation" Value="Vertical">
+                                <Setter Property="LayoutTransform" TargetName="TemplateRoot">
+                                    <Setter.Value>
+                                        <RotateTransform Angle="-90"/>
+                                    </Setter.Value>
+                                </Setter>
+                            </Trigger>
+                            <Trigger Property="IsIndeterminate" Value="true">
+                                <Setter Property="Visibility" TargetName="Indicator" Value="Collapsed"/>
+                            </Trigger>
+                        </ControlTemplate.Triggers>
+                    </ControlTemplate>
+                </Setter.Value>
+            </Setter>
+        </Style>
+    </Window.Resources>
+    <Grid>
+        <Grid Margin="-6,0,6,0">
+            <Grid.ColumnDefinitions>
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+                <ColumnDefinition />
+            </Grid.ColumnDefinitions>
+            <Grid.RowDefinitions>
+                <RowDefinition Height="50"/>
+                <RowDefinition/>
+            </Grid.RowDefinitions>
+            <Grid.Background>
+                <ImageBrush ImageSource="/bc.jpg"/>
+            </Grid.Background>
+            <Label Content="FIND THE CORRECT BOOK NUMBER!" HorizontalAlignment="Center" Margin="0,10,0,0" VerticalAlignment="Top" FontSize="20" FontFamily="Arial Rounded MT Bold" FontWeight="Bold" Foreground="#FFA29A9A" Grid.Row="0" Grid.ColumnSpan="2" Grid.Column="1">
+                <Label.Background>
+                    <ImageBrush/>
+                </Label.Background>
+            </Label>
+            <ListBox x:Name="Booknumbers1" Grid.Column="1"   Grid.Row="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <ListBox x:Name="booknamelist2" Grid.Column="2" SelectionChanged="bookname_SelectionChanged" Grid.Row="1">
+                <ListBox.ItemTemplate>
+                    <DataTemplate>
+                        <TextBlock Text="{Binding}" />
+                    </DataTemplate>
+                </ListBox.ItemTemplate>
+            </ListBox>
+
+            <Label Content="Wins " Grid.Column="3" Margin="0,104,0,425" Grid.Row="1" Background="{x:Null}" Foreground="#FF4AEA2A"></Label>
+            <TextBox x:Name="totalscore" Margin="206,43,16,485" Grid.Column="3" Grid.Row="1" IsReadOnly="True" TextAlignment="Center"/>
+            <TextBox x:Name="incorrectA" Margin="103,43,123,485" Grid.Column="3" Grid.Row="1" IsReadOnly="True" TextAlignment="Center" />
+            <TextBox x:Name="correctA" Grid.Column="3" Margin="10,43,222,485" Grid.Row="1" IsReadOnly="True" TextAlignment="Center"/>
+            <ProgressBar x:Name="progress" HorizontalAlignment="Left" Height="17" Margin="5,125,0,0" VerticalAlignment="Top" Width="253" Grid.Column="3" Grid.Row="1" Maximum="110"/>
+            <Label Content="Loses " Grid.Column="3" Margin="0,147,0,382" Grid.Row="1" Background="{x:Null}" Foreground="#FF4AEA2A"></Label>
+            <ProgressBar x:Name="negprogress" HorizontalAlignment="Left" Height="17" Margin="5,172,0,0" VerticalAlignment="Top" Width="253" Grid.Column="3" Grid.Row="1" Maximum="110"/>
+
+            <Button x:Name="Display" Content="(bugs? :( reset!)" HorizontalAlignment="Left" Margin="10,2,0,0" VerticalAlignment="Top" Background="#FFB9F58C" Height="35" Width="185" Click="Display_Click" Foreground="#FF464646" Grid.Row="1">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+            </Button>
+            <Button x:Name="Reload" Content="know the answer?(Reload)" HorizontalAlignment="Left" Margin="10,54,0,0" VerticalAlignment="Top" Background="#FFB9F58C" Height="35" Width="185" Click="Reload_Click" Foreground="#FF464646" Grid.Row="1">
+                <Button.BorderBrush>
+                    <ImageBrush/>
+                </Button.BorderBrush>
+            </Button>
+
+            <Button Name="Backbutton" Click="Backbutton_Click" Margin="0,0,5,5" BorderThickness="0" Grid.Row="0" Grid.Column="0">
+                <Button.Background>
+                    <ImageBrush></ImageBrush>
+                </Button.Background>
+                <Image Source="/return-88.png" Stretch="Uniform" Width="148" Height="45" />
+            </Button>
+
+            <Button x:Name="silver" Click="silver_Click" Margin="139,197,44,292" Grid.Row="1" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Silver-Medal-PNG-Clipart.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="bronze" Click="bronze_Click" Margin="10,95,175,382" Grid.Row="1" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Bronze_Icon.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+            <Button x:Name="gold" Click="gold_Click" Margin="12,312,171,170" Grid.Row="1" BorderBrush="{x:Null}">
+                <Button.Background>
+                    <ImageBrush ImageSource="/Award-PNG.png"></ImageBrush>
+                </Button.Background>
+            </Button>
+
+
+
+        </Grid>
+    </Grid>
+</Window>

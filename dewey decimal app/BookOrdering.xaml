@@ -1,0 +1,90 @@
+﻿<Window x:Class="dewey_decimal_app.BookOrdering"
+        xmlns="http://schemas.microsoft.com/winfx/2006/xaml/presentation"
+        xmlns:x="http://schemas.microsoft.com/winfx/2006/xaml"
+        xmlns:d="http://schemas.microsoft.com/expression/blend/2008"
+        xmlns:mc="http://schemas.openxmlformats.org/markup-compatibility/2006"
+        xmlns:local="clr-namespace:dewey_decimal_app"
+        mc:Ignorable="d"
+        Title="Change the Order" Height="750" Width="1000"
+        ResizeMode="CanMinimize">
+    <Grid Margin="0,0,0,2">
+        <Grid.RowDefinitions>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+            <RowDefinition Height="*"/>
+        </Grid.RowDefinitions>
+        <Grid.ColumnDefinitions>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+            <ColumnDefinition Width="*"/>
+        </Grid.ColumnDefinitions>
+        <Grid.Background>
+            <ImageBrush ImageSource="/bc.jpg"/>
+        </Grid.Background>
+        <TextBlock FontSize="36" Grid.Column="1" Grid.ColumnSpan="3" TextAlignment="Center" TextWrapping="Wrap" HorizontalAlignment="Center" VerticalAlignment="Center" Width="440"><Run Language="en-za" Text="ORDERING SECTION " Foreground="AliceBlue"/></TextBlock>
+        <Button Name="btnReturn" Click="OnExit" Margin="23,14,62,14" BorderThickness="0" Grid.Row="0" Grid.Column="0">
+            <Button.Background>
+                <ImageBrush></ImageBrush>
+            </Button.Background>
+            <Image Source="/return-88.png" Stretch="Uniform" />
+        </Button>
+
+
+        <Button x:Name="display_books" Content="Click me for new Question" Click="randombooks" FontFamily="Bahnschrift SemiBold Condensed" Foreground="Black" Grid.Row="1" Margin="100,51,111,98" FontSize="18" Grid.RowSpan="2" Grid.ColumnSpan="3" Background="#D3D3D3" BorderBrush="{x:Null}" >
+
+        </Button>
+
+
+        <ListBox Margin="100,2,111,31" Name="QuestionsDisplay" AllowDrop="True" SelectionChanged="QuestionsList"  BorderThickness="0" Grid.Row="2" Grid.RowSpan="4" Grid.ColumnSpan="3" Background="#D3D3D3">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <ListBox Margin="111,2,100,31" x:Name="AnswersDisplay" AllowDrop="True" SelectionChanged="AnswersList" BorderBrush="#D3D3D3" Background="#D3D3D3" Grid.Column="2" Grid.RowSpan="4" Grid.Row="2" Grid.ColumnSpan="3">
+
+            <ListBox.ItemTemplate>
+                <DataTemplate>
+                    <StackPanel Orientation="Horizontal">
+                        <TextBlock Text="{Binding}" />
+                    </StackPanel>
+                </DataTemplate>
+            </ListBox.ItemTemplate>
+        </ListBox>
+        <Button x:Name="submit" Content="check answers" Margin="111,52,100,98" Click="Manual_Submission" RenderTransformOrigin="1.722,0.513" BorderBrush="#D3D3D3" Foreground="#FF130F0F" FontFamily="Bahnschrift SemiBold SemiCondensed" FontSize="18" Grid.Column="2" Grid.Row="1" BorderThickness="0" Grid.ColumnSpan="3" Background="#D3D3D3" Grid.RowSpan="2"/>
+
+        <Popup x:Name="MyPopup" PlacementTarget="{Binding ElementName=submit}" StaysOpen="False">
+            <StackPanel>
+                <TextBlock Text="Congratulations!" FontWeight="Bold" FontSize="24" HorizontalAlignment="Center"/>
+                <MediaElement Source="pics/giphy.gif" Width="200" Height="200"/>
+            </StackPanel>
+        </Popup>
+        <TextBlock Grid.Row="7" Grid.Column="3" Name="scoring" Foreground="SeaGreen" TextAlignment="Center" VerticalAlignment="Center" HorizontalAlignment="Center"   FontSize="36"></TextBlock>
+        <Button x:Name="silver" Click="silver_Click" Margin="0,104,0,-1" Grid.RowSpan="2" Grid.Row="5" Grid.Column="1" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Silver-Medal-PNG-Clipart.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="bronze" Click="bronze_Click" Margin="0,1,0,-1" Grid.Row="6" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Bronze_Icon.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+        <Button x:Name="gold" Click="gold_Click" Grid.Column="2" Margin="0,104,0,1" Grid.RowSpan="2" Grid.Row="5" BorderBrush="{x:Null}">
+            <Button.Background>
+                <ImageBrush ImageSource="/Award-PNG.png"></ImageBrush>
+            </Button.Background>
+        </Button>
+    </Grid>
+
+</Window>
