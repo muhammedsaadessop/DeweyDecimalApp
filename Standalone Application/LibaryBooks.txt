@@ -1,0 +1,10 @@
+000,Generalities
+100,Philosophy and psychology
+200,Religion
+300,Social sciences
+400,Language
+500,Natural sciences and mathematics
+600,Technology (Applied sciences)
+700,The arts. Fine and decorative arts
+800,Literature (Belles-lettres) 
+900,Geography and history

@@ -1,0 +1,258 @@
+﻿000 Generalities
+001 General Knowledges
+002 General Books
+003 General Systems
+004 Computer Sciences
+005 Programming
+010 Bibliography
+011 General Bibliographies
+012 Individual Bibliographies
+013 Specific Bibliographies
+014 Anonymous Bibliographies
+015 Special Countries
+020 Libary information Sciences
+021 Book Relationships
+022 Administration of plants
+023 Staff Administration
+025 Operations
+100 Philosophy and Psychology
+120 Epistemology, causation, humankind
+121 Theory of Knowledge
+122 Causation
+123 Determinism & indeterminism 
+124 Teleology
+125 Trick Question(refresh)
+126 Self
+127 Consciousness
+128 Humans
+140 Specific philosophical schools
+141 Idealism Systems
+142 Critical Philosophy
+143 Intuitionism & Bergsonism
+144 Humanism & related systems 
+145 Sensationalism
+146 Naturalism & related systems 
+147 Pantheism & related
+148 Liberalism, eclecticism, traditionalism
+149 Alternative philosophical systems 
+160 Logic
+161 Induction
+162 Deduction
+165 Fallacies & sources of error
+166 Syllogisms
+167 Hypotheses 
+168 Argument & persuasion 
+169 Analogy 
+200 Religion
+210 Natural theology
+211 Concepts of God 
+212 Existence
+213 Creation 
+214 Theodicy 
+215 Science & religion 
+216 Good & evil 
+218 Humankind 
+220 Bible 
+221 Old Testament 
+222 Historical books of Old Testament 
+223 Poetic books of Old Testament 
+224 Prophetic books of Old Testament 
+225 New Testament 
+226 Gospels & Acts 
+227 Epistles 
+228 Revelation (Apocalypse) 
+229 Apocrypha & pseudepigrapha 
+230 Christian theology 
+231 God 
+232 Jesus Christ & his family 
+233 Soteriology
+235 Spiritual beings 
+236 Eschatology 
+238 Creeds & catechisms 
+239 Apologetics
+300 Social Sciences
+310 General statistics 
+314 General statistics Of Europe 
+315 General statistics Of Asia 
+316 General statistics Of Africa 
+317 General statistics Of North America 
+318 General statistics Of South America 
+319 General statistics Of the world 
+320 Political science 
+321 Systems of governments & states 
+322 Relation of state to organized groups 
+323 Civil & political rights 
+324 The political process 
+325 International migration & colonization 
+326 Slavery & emancipation 
+327 International relations 
+328 The legislative process 
+330 Economics 
+331 Labor economics 
+332 Financial economics 
+333 Land economics 
+334 Cooperatives 
+335 Socialism & related systems 
+336 Public finance 
+337 International economics 
+338 Production 
+339 Macroeconomics & related topics
+400 Language
+450 Italian, Romanian, Rhaeto-Romantic 
+451 Italian writing system & phonology 
+452 Italian etymology 
+453 Italian dictionaries 
+455 Italian grammar  
+457 Italian language variations 
+458 Standard Italian usage 
+459 Romanian & Rhaeto-Romanic
+460 Spanish & Portugese languages 
+461 Spanish writing system & phonology 
+462 Spanish etymology 
+463 Spanish dictionaries 
+465 Spanish grammar 
+467 Spanish language variations 
+468 Standard Spanish usage 
+469 Portuguese 
+470 Italic Latin 
+471 Classical Latin writing & phonology 
+472 Classical Latin etymology & phonology 
+473 Classical Latin dictionaries  
+475 Classical Latin grammar 
+477 Old, Postclassical, Vulgar Latin 
+478 Classical Latin usage 
+479 Other Italic languages 
+500 Natural Sciences and Maths
+530 Physics 
+531 Classical mechanics Solid mechanics 
+532 Fluid mechanics Liquid mechanics 
+533 Gas mechanics 
+534 Sound & related vibrations 
+535 Light & paraphotic phenomena 
+536 Heat 
+537 Electricity & electronics 
+538 Magnetism 
+539 Modern physics 
+540 Chemistry & allied sciences 
+541 Physical & theoretical chemistry 
+542 Techniques, equipment, materials 
+543 Analytical chemistry 
+544 Qualitative analysis 
+545 Quantitative analysis 
+546 Inorganic chemistry 
+547 Organic chemistry 
+548 Crystallography 
+549 Mineralogy 
+550 Earth sciences 
+551 Geology, hydrology, meteorology 
+552 Petrology 
+553 Economic geology 
+554 Earth sciences of Europe 
+555 Earth sciences of Asia 
+556 Earth sciences of Africa 
+557 Earth sciences of North America 
+558 Earth sciences of South America 
+559 Earth sciences of other areas
+600 Technology and Applied Sciences
+670 Manufacturing 
+671 Metalworking & metal products 
+672 Iron, steel, other iron alloys 
+673 Nonferrous metals 
+674 Lumber processing, wood products, cork 
+675 Leather & fur processing 
+676 Pulp & paper technology 
+677 Textiles 
+678 Elastomers & elastomer products 
+679 Other products of specific materials 
+680 Manufacture for specific uses 
+681 Precision instruments & other devices 
+682 Small forge work (Blacksmithing) 
+683 Hardware & household appliances 
+684 Furnishings & home workshops 
+685 Leather, fur, related products 
+686 Printing & related activities 
+687 Clothing 
+688 Other final products & packaging 
+690 Buildings 
+691 Building materials 
+692 Auxiliary construction practices 
+693 Specific materials & purposes 
+694 Wood construction Carpentry 
+695 Roof covering 
+696 Utilities 
+697 Heating, ventilating, air-conditioning 
+698 Detail finishing 
+700 Fine and Decrotative Arts
+701 Philosophy & theory 
+702 Miscellany 
+703 Dictionaries & encyclopedias 
+704 Special topics 
+705 Serial publications 
+706 Organizations & management 
+707 Education, research, related topics 
+708 Galleries, museums, private collections 
+709 Historical, areas, persons treatment
+760 Graphic arts Printmaking & prints 
+761 Relief processes (Block printing) 
+763 Lithographic (Planographic) processes 
+764 Chromolithography & serigraphy 
+765 Metal engraving 766 Mezzotinting & related processes 
+767 Etching & drypoint 
+769 Prints
+790 Recreational & performing arts 
+791 Public performances 
+792 Stage presentations 
+793 Indoor games & amusements 
+794 Indoor games of skill 
+795 Games of chance 
+796 Athletic & outdoor sports & games 
+797 Aquatic & air sports 
+798 Equestrian sports & animal racing 
+799 Fishing, hunting, shooting
+800 Literature (Belles-lettres) 
+830 Literatures of Germanic languages
+831 Early to 1517
+832 Reformation 1517-1750
+833 Classic period 1750-1830
+834 Post classic & modern 1830-1940/50
+835 Contemporary authors not already established 1940/50-
+836 German dialect literature
+837 German-American
+838 German miscellaneous writings
+839 Other Germanic literatures
+860 Spanish & Portuguese literatures
+861 Early to 1400
+862 1400-1553
+863 Golden age, 1554-1700
+864 1700-1800
+865 1800-
+866 Works in and/or about Iberian dialects
+867 Catalan
+868 Portuguese
+869 South/Central American Literature
+870 General works on Latin literature
+871 Latin Authors
+872 Collections of Latin prose or poetry
+879 Classical literature-History and criticism
+880 Hellenic literatures Classical Greek
+881 Greek Authors
+890 Indic Literature
+891.5 Iranian/Persian Literature
+891.6 Celtic/Gaelic Literature
+891.7 Slavic and Baltic Literatures
+900 Geography and history
+901 Philosophy & theory 
+902 Miscellany 
+903 Dictionaries & encyclopedias 
+904 Collected accounts of events 
+905 Serial publications
+910 Geography & travel 
+911 Historical geography 
+912 Graphic representations of earth 
+913 Ancient world 
+914 Europe 
+915 Asia 
+916 Africa 
+917 North America 
+918 South America 
+919 Other areas
